@@ -1,0 +1,76 @@
+# Dependencies
+node_modules/
+frontend/node_modules/
+backend/venv/
+
+# Build outputs
+dist/
+build/
+frontend/dist/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+.eggs/
+*.egg-info/
+*.egg
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+instance/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Testing
+coverage/
+.nyc_output/
+
+# Misc
+*.bak
+*.tmp
+*.temp
+nul
+*.xlsx
+
+# Root image files (duplicates or unused)
+/2.png
+/hero.png
+/Header.png
+/수상경력.png
+/업체 리스트.png
+/cardImg/
+/architecture.mermaid
