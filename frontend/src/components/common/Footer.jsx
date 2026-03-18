@@ -15,9 +15,20 @@ function Footer() {
               KIDC와 함께 성장하세요.
             </p>
             <div className="text-sm space-y-1">
-              <p>전화: (추후 입력)</p>
-              <p>이메일: (추후 입력)</p>
+              <p>전화: 1566-2137</p>
+              <p>이메일: manager@inter114.kr</p>
             </div>
+            <a
+              href="https://pf.kakao.com/_xjxavxhX"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 mt-3 px-4 py-2 bg-yellow-400 text-gray-900 text-sm font-medium rounded-lg hover:bg-yellow-300 transition-colors"
+            >
+              <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 3C6.48 3 2 6.58 2 10.9c0 2.78 1.86 5.22 4.65 6.6-.15.56-.96 3.56-.99 3.77 0 0-.02.17.09.23.11.07.24.02.24.02.31-.04 3.66-2.39 4.24-2.8.57.08 1.16.13 1.77.13 5.52 0 10-3.58 10-7.95C22 6.58 17.52 3 12 3z"/>
+              </svg>
+              카카오톡 상담
+            </a>
           </div>
 
           {/* 서비스 링크 */}
@@ -41,9 +52,10 @@ function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-4">회사 정보</h4>
             <ul className="text-sm space-y-2 text-gray-400">
-              <li>상호: (주)한국인터넷정보통신</li>
-              <li>사업자등록번호: 000-00-00000</li>
-              <li>주소: (추후 입력)</li>
+              <li>상호: 주식회사한국인터넷정보통신</li>
+              <li>대표자: 방진성</li>
+              <li>사업자등록번호: 864-81-02572</li>
+              <li>주소: 경기도 김포시 고촌읍 김포대로 328</li>
             </ul>
           </div>
         </div>

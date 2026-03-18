@@ -1,5 +1,5 @@
 // Google Sheets Web App URL
-const GOOGLE_SHEETS_URL = 'https://script.google.com/macros/s/AKfycbyRPunmDuOBhbaZqiUoiepOB9hUkB7w5i9j3ygh48uHfD7IMRdWmjg8JVoFZzKNTUJe/exec'
+const GOOGLE_SHEETS_URL = 'https://script.google.com/macros/s/AKfycbzSrAsHQO5eI5OsurmVelouwGg0i5zGEdEWGTqkDpPrrAXVt7RGh517fDSZpbRKlHVU7A/exec'
 
 // 문의 제출 - Google Sheets로 전송 (GET 방식)
 export const submitInquiry = async (data) => {

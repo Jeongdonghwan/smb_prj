@@ -2,9 +2,9 @@ import { Link } from 'react-router-dom'
 
 function Logo({ className = '', size = 'default' }) {
   const sizeClasses = {
-    small: 'h-8',
-    default: 'h-10',
-    large: 'h-14'
+    small: 'h-14',
+    default: 'h-[6.5rem] md:h-[7.8rem]',
+    large: 'h-40'
   }
 
   return (

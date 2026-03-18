@@ -35,7 +35,7 @@ function FloatingCTA() {
         <div className="flex flex-col gap-2 animate-fade-in-up">
           {/* 카카오톡 */}
           <a
-            href="https://pf.kakao.com/_Izxnxgn"
+            href="https://pf.kakao.com/_xjxavxhX"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-3 bg-white px-4 py-3 rounded-full shadow-strong hover:shadow-glow transition-all duration-300 group"
