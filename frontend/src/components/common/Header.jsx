@@ -39,7 +39,7 @@ function Header() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-12 md:h-14">
+        <div className="flex items-center justify-between h-20 md:h-24">
           {/* 로고 */}
           <Logo />
 
@@ -101,7 +101,7 @@ function Header() {
 
             <button
               onClick={scrollToInquiry}
-              className="btn-primary text-sm px-4 py-1.5"
+              className="btn-primary"
             >
               문의하기
             </button>
