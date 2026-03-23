@@ -7,7 +7,7 @@ function WhyUs() {
   const [countersVisible, setCountersVisible] = useState(false)
 
   const stats = [
-    { number: 500, suffix: '+', label: '누적 고객사', color: 'from-blue-500 to-blue-600' },
+    { number: 12765, suffix: '+', label: '누적 고객사', color: 'from-blue-500 to-blue-600' },
     { number: 98, suffix: '%', label: '고객 만족도', color: 'from-green-500 to-green-600' },
     { number: 10, suffix: '년+', label: '업계 경험', color: 'from-purple-500 to-purple-600' },
     { number: 24, suffix: 'h', label: '빠른 응대', color: 'from-orange-500 to-orange-600' },
