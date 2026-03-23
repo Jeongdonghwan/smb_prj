@@ -15,7 +15,7 @@ function HeroBanner() {
   }
 
   const stats = [
-    { number: '500+', label: '누적 고객사' },
+    { number: '12,765', label: '누적 고객사' },
     { number: '98%', label: '고객 만족도' },
     { number: '10년+', label: '업계 경험' },
     { number: '24h', label: '빠른 응대' },

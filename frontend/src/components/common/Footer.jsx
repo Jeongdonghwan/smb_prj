@@ -9,7 +9,7 @@ function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* 회사 정보 */}
           <div>
-            <Logo className="text-white mb-4" />
+            <Logo className="text-white mb-2" size="small" />
             <p className="text-sm text-gray-400 mb-4">
               온라인 마케팅 전문 대행사<br />
               KIDC와 함께 성장하세요.
@@ -55,6 +55,7 @@ function Footer() {
               <li>상호: 주식회사한국인터넷정보통신</li>
               <li>대표자: 방진성</li>
               <li>사업자등록번호: 864-81-02572</li>
+              <li>통신판매등록번호: 2024-경기김포-8085</li>
               <li>주소: 경기도 김포시 고촌읍 김포대로 328</li>
             </ul>
           </div>

@@ -210,7 +210,7 @@ function ServiceDetail({ service }) {
             <div className="max-w-4xl mx-auto text-center scroll-animate">
               <span className="badge-primary mb-4">SOLUTION</span>
               <h2 className="section-title mb-6">
-                KIDC의 <span className="gradient-text">{service.solution.title}</span>
+                <span className="gradient-text">{service.solution.title}</span>
               </h2>
               <p className="text-xl text-gray-600 mb-8">
                 {service.solution.desc}
