@@ -147,7 +147,7 @@ function ServiceDetail({ service }) {
           </p>
 
           <div className="flex flex-wrap justify-center gap-6 mb-8">
-            {['500+ 고객사 선택', '98% 만족도', '24시간 응대'].map((badge, index) => (
+            {['12,765 고객사 선택', '98% 만족도', '24시간 응대'].map((badge, index) => (
               <div key={index} className="flex items-center gap-2 text-white/70">
                 <Icon name="check" className="w-5 h-5 text-green-400" />
                 <span className="text-sm font-medium">{badge}</span>
