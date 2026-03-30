@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 import InquiryForm from '../components/common/InquiryForm'
 import { Icon } from '../components/icons'
+import { useSEO } from '../hooks/useSEO'
 
 // FAQ 아코디언 컴포넌트
 function FAQItem({ question, answer, isOpen, onClick }) {
@@ -156,9 +157,14 @@ function SpecSheet() {
   const [openFAQ, setOpenFAQ] = useState(null)
   const sectionRef = useRef(null)
 
+  useSEO({
+    title: '이커머스 랭킹 솔루션 | KIDC 마케팅',
+    description: '쿠팡 & 스마트스토어 상품 순위를 전략적으로 끌어올리는 이커머스 랭킹 솔루션. 트래픽 부스트, 세일즈 액셀러레이터, 리뷰 빌딩 서비스 제공.',
+    path: '/spec-sheet',
+  })
+
   useEffect(() => {
     window.scrollTo(0, 0)
-    document.title = '이커머스 랭킹 솔루션 | KIDC'
 
     const observer = new IntersectionObserver(
       (entries) => {

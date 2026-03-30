@@ -1,4 +1,3 @@
-import { useEffect } from 'react'
 import HeroBanner from '../components/home/HeroBanner'
 import ServiceCards from '../components/home/ServiceCards'
 import WhyUs from '../components/home/WhyUs'
@@ -8,17 +7,14 @@ import Testimonials from '../components/home/Testimonials'
 import ClientLogos from '../components/home/ClientLogos'
 import InquiryForm from '../components/common/InquiryForm'
 import FloatingCTA from '../components/common/FloatingCTA'
+import { useSEO } from '../hooks/useSEO'
 
 function Home() {
-  useEffect(() => {
-    document.title = 'KIDC 마케팅 | 스마트스토어, 쿠팡, 플레이스 마케팅 전문'
-
-    // 메타 태그 업데이트
-    const metaDescription = document.querySelector('meta[name="description"]')
-    if (metaDescription) {
-      metaDescription.setAttribute('content', 'KIDC 마케팅 대행사 - 스마트스토어, 쿠팡, 플레이스, 검색광고, 리뷰 마케팅 전문. 10년 경력 전문가가 직접 관리하는 맞춤형 마케팅 솔루션으로 매출 성장을 경험하세요.')
-    }
-  }, [])
+  useSEO({
+    title: '(주)한국인터넷정보통신 KIDC | 스마트스토어, 쿠팡, 플레이스 마케팅 전문',
+    description: '김포마케팅회사 KIDC - 스마트스토어, 쿠팡, 플레이스, 블로그, 유튜브, 인스타그램 마케팅 전문 대행사. 10년 경력 전문가가 직접 관리하는 맞춤형 마케팅 솔루션으로 매출 성장을 경험하세요.',
+    path: '/',
+  })
 
   return (
     <div className="overflow-x-hidden">

@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 import InquiryForm from '../common/InquiryForm'
 import { Icon } from '../icons'
+import { useSEO } from '../../hooks/useSEO'
 
 // 서비스별 배경 이미지
 const serviceImages = {
@@ -86,9 +87,14 @@ function ServiceDetail({ service }) {
   const [openFAQ, setOpenFAQ] = useState(null)
   const sectionRef = useRef(null)
 
+  useSEO({
+    title: `${service.title} | KIDC 마케팅`,
+    description: service.description,
+    path: service.path,
+  })
+
   useEffect(() => {
     window.scrollTo(0, 0)
-    document.title = `${service.title} | KIDC 마케팅`
 
     const observer = new IntersectionObserver(
       (entries) => {
