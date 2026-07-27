@@ -28,21 +28,26 @@ function HeroBanner() {
 
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
-      {/* 배경: 깊고 따뜻한 주황 그라데이션 (톤 다운) */}
-      <div className="absolute inset-0" style={{ background: 'linear-gradient(135deg, #431407 0%, #6b2410 38%, #7c2d12 68%, #9a3412 100%)' }} />
+      {/* 배경 사진 */}
+      <img
+        src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=2000&q=80"
+        alt="온라인 마케팅"
+        className="absolute inset-0 w-full h-full object-cover"
+        loading="eager"
+      />
+      {/* 따뜻한 주황 오버레이 (좌 진하게 → 우 옅게) */}
+      <div className="absolute inset-0" style={{ background: 'linear-gradient(105deg, rgba(67,20,7,0.94) 0%, rgba(124,45,18,0.86) 38%, rgba(154,52,18,0.60) 66%, rgba(194,65,12,0.32) 100%)' }} />
       {/* 도트 패턴 오버레이 */}
-      <div className="absolute inset-0 pattern-dots opacity-[0.12]" />
-      {/* 은은한 라이트 글로우 */}
-      <div className="absolute -top-24 -right-24 w-[520px] h-[520px] rounded-full opacity-25" style={{ background: 'radial-gradient(circle, rgba(251,191,36,0.4) 0%, transparent 70%)' }} />
+      <div className="absolute inset-0 pattern-dots opacity-[0.10]" />
 
       {/* 우측 원형 포인트 (데스크톱, 참고 이미지 레이아웃) */}
       <div className="hidden lg:flex absolute right-6 xl:right-20 top-1/2 -translate-y-1/2 items-center justify-center pointer-events-none">
         <div
           className="relative w-[380px] h-[380px] xl:w-[460px] xl:h-[460px] rounded-full flex flex-col items-center justify-center text-center animate-float"
           style={{
-            background: 'radial-gradient(circle at 32% 28%, rgba(251,191,36,0.28) 0%, rgba(194,65,12,0.45) 55%, rgba(67,20,7,0.35) 100%)',
-            border: '1px solid rgba(255,255,255,0.22)',
-            boxShadow: '0 0 70px rgba(154,52,18,0.4)',
+            background: 'radial-gradient(circle at 35% 30%, rgba(249,115,22,0.92) 0%, rgba(234,88,12,0.94) 55%, rgba(154,52,18,0.92) 100%)',
+            border: '1px solid rgba(255,255,255,0.3)',
+            boxShadow: '0 20px 60px rgba(67,20,7,0.5)',
           }}
         >
           <span className="text-white/75 tracking-[0.35em] text-xs xl:text-sm font-semibold mb-4">ONLINE MARKETING</span>
@@ -64,18 +69,7 @@ function HeroBanner() {
 
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
               온라인 마케팅의<br />
-              <span className="relative">
-                <span className="text-amber-200">새로운 기준</span>
-                <svg className="absolute -bottom-2 left-0 w-full" viewBox="0 0 300 12" fill="none">
-                  <path d="M2 10C50 3 150 3 298 10" stroke="url(#underline-gradient)" strokeWidth="4" strokeLinecap="round"/>
-                  <defs>
-                    <linearGradient id="underline-gradient" x1="0" y1="0" x2="300" y2="0">
-                      <stop stopColor="#fde68a"/>
-                      <stop offset="1" stopColor="#fff7ed"/>
-                    </linearGradient>
-                  </defs>
-                </svg>
-              </span>
+              <span className="inline-block bg-primary-500 text-white px-4 py-1 rounded-lg mt-3 shadow-lg">새로운 기준</span>
             </h1>
 
             <p className="text-lg sm:text-xl text-white/80 mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed">
