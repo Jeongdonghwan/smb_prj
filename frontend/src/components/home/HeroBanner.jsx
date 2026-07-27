@@ -35,25 +35,23 @@ function HeroBanner() {
         className="absolute inset-0 w-full h-full object-cover"
         loading="eager"
       />
-      {/* 따뜻한 주황 오버레이 (좌 진하게 → 우 옅게) */}
-      <div className="absolute inset-0" style={{ background: 'linear-gradient(105deg, rgba(67,20,7,0.94) 0%, rgba(124,45,18,0.86) 38%, rgba(154,52,18,0.60) 66%, rgba(194,65,12,0.32) 100%)' }} />
-      {/* 도트 패턴 오버레이 */}
-      <div className="absolute inset-0 pattern-dots opacity-[0.10]" />
+      {/* 중립 다크 오버레이 (좌 진하게 → 우 옅게, 사진 살림) */}
+      <div className="absolute inset-0" style={{ background: 'linear-gradient(100deg, rgba(10,10,12,0.88) 0%, rgba(15,15,18,0.72) 40%, rgba(20,20,24,0.45) 68%, rgba(20,20,24,0.25) 100%)' }} />
 
-      {/* 우측 원형 포인트 (데스크톱, 참고 이미지 레이아웃) */}
-      <div className="hidden lg:flex absolute right-6 xl:right-20 top-1/2 -translate-y-1/2 items-center justify-center pointer-events-none">
+      {/* 우측 원형 포인트 — 유일한 주황 포인트 */}
+      <div className="hidden lg:flex absolute right-10 xl:right-24 top-1/2 -translate-y-1/2 items-center justify-center pointer-events-none">
         <div
-          className="relative w-[380px] h-[380px] xl:w-[460px] xl:h-[460px] rounded-full flex flex-col items-center justify-center text-center animate-float"
+          className="relative w-[300px] h-[300px] xl:w-[360px] xl:h-[360px] rounded-full flex flex-col items-center justify-center text-center"
           style={{
-            background: 'radial-gradient(circle at 35% 30%, rgba(249,115,22,0.92) 0%, rgba(234,88,12,0.94) 55%, rgba(154,52,18,0.92) 100%)',
-            border: '1px solid rgba(255,255,255,0.3)',
-            boxShadow: '0 20px 60px rgba(67,20,7,0.5)',
+            background: 'radial-gradient(circle at 35% 30%, #fb923c 0%, #ea580c 55%, #c2410c 100%)',
+            border: '1px solid rgba(255,255,255,0.25)',
+            boxShadow: '0 25px 70px rgba(0,0,0,0.45)',
           }}
         >
-          <span className="text-white/75 tracking-[0.35em] text-xs xl:text-sm font-semibold mb-4">ONLINE MARKETING</span>
-          <span className="text-white text-3xl leading-none opacity-70 mb-1">&ldquo;</span>
-          <span className="text-4xl xl:text-5xl leading-tight font-extrabold text-white">온라인 마케팅<br />전문기업</span>
-          <span className="text-white text-3xl leading-none opacity-70 mt-1">&rdquo;</span>
+          <span className="text-white/75 tracking-[0.35em] text-[11px] xl:text-xs font-semibold mb-3">ONLINE MARKETING</span>
+          <span className="text-white text-2xl leading-none opacity-70 mb-1">&ldquo;</span>
+          <span className="text-3xl xl:text-4xl leading-tight font-extrabold text-white">온라인 마케팅<br />전문기업</span>
+          <span className="text-white text-2xl leading-none opacity-70 mt-1">&rdquo;</span>
         </div>
       </div>
 
