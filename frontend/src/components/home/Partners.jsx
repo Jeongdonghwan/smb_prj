@@ -81,18 +81,18 @@ function Partners() {
             </div>
 
             {/* 우: 폰 + 마케팅 일러스트 */}
-            <div className="relative flex justify-center lg:justify-end pr-2 lg:pr-8">
+            <div className="relative flex justify-center">
               {/* 배경 블롭 + 링 */}
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 rounded-full bg-primary-100/70 blur-2xl" />
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[26rem] h-[26rem] rounded-full border-2 border-primary-100" />
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 rounded-full bg-primary-100/70 blur-2xl" />
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[30rem] h-[30rem] rounded-full border-2 border-primary-100" />
 
               {/* 폰 + 칩 그룹 */}
               <div className="relative">
-              <div className="relative w-56 md:w-64 h-[430px] md:h-[470px] rounded-[2.4rem] bg-gray-900 p-3 shadow-2xl rotate-6">
+              <div className="relative w-60 md:w-72 h-[460px] md:h-[520px] rounded-[2.6rem] bg-gray-900 p-3 shadow-2xl rotate-6">
                 <div className="w-full h-full rounded-[1.7rem] bg-gradient-to-b from-primary-400 to-primary-600 overflow-hidden relative">
                   <div className="mx-auto mt-2.5 w-14 h-1.5 rounded-full bg-white/40" />
                   {/* 플레이스 카드 */}
-                  <div className="absolute top-14 left-1/2 -translate-x-1/2 w-44 bg-white rounded-xl shadow-lg p-3.5">
+                  <div className="absolute top-14 left-1/2 -translate-x-1/2 w-48 md:w-56 bg-white rounded-xl shadow-lg p-4">
                     <div className="flex items-center gap-2">
                       <div className="w-7 h-7 rounded-md bg-green-500 flex items-center justify-center text-white font-extrabold text-sm">N</div>
                       <div className="text-gray-900 text-xs font-bold">우리동네 맛집</div>
