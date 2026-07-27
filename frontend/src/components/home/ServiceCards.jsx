@@ -79,23 +79,24 @@ function ServiceCards() {
             ))}
           </div>
 
-          {/* 미니 카드: 기타 서비스 */}
-          <div className="mt-12">
+          {/* 기타 서비스 카드 (메인과 동일한 카드 형식) */}
+          <div className="mt-8">
             <p className="text-gray-500 text-sm text-center mb-6">기타 서비스</p>
-            <div className="grid grid-cols-3 gap-4 max-w-2xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6 max-w-4xl mx-auto">
               {subServices.map((service, index) => (
                 <Link
                   key={service.id}
                   to={service.path}
-                  className="scroll-animate group flex items-center gap-3 bg-gray-800/50 border border-gray-700/50 rounded-xl px-4 py-3 hover:border-gray-600 hover:-translate-y-1 transition-all duration-300"
+                  className="scroll-animate group relative flex flex-col bg-black border border-gray-800 rounded-2xl p-6 transition-all duration-500 hover:-translate-y-2 hover:border-gray-700 hover:shadow-[0_10px_40px_rgba(0,0,0,0.5)] focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-offset-2 focus:ring-offset-gray-900"
                   style={{ transitionDelay: `${(index + 5) * 0.1}s` }}
                 >
-                  <div className={`w-9 h-9 rounded-lg bg-gradient-to-br ${service.color} flex items-center justify-center flex-shrink-0`}>
-                    <Icon name={service.icon} className="w-5 h-5 text-white" />
+                  <h3 className="text-white font-bold text-lg mb-1">{service.title}</h3>
+                  <p className="text-gray-400 text-sm leading-relaxed mb-6">{service.shortDesc}</p>
+                  <div className="mt-auto flex justify-center">
+                    <div className={`w-28 h-28 rounded-2xl bg-gradient-to-br ${service.color} flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform duration-500`}>
+                      <Icon name={service.icon} className="w-14 h-14 text-white" />
+                    </div>
                   </div>
-                  <span className="text-gray-300 text-sm font-medium group-hover:text-white transition-colors truncate">
-                    {service.title}
-                  </span>
                 </Link>
               ))}
             </div>
