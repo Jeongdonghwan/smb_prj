@@ -38,20 +38,39 @@ function HeroBanner() {
       {/* 중립 다크 오버레이 (좌 진하게 → 우 옅게, 사진 살림) */}
       <div className="absolute inset-0" style={{ background: 'linear-gradient(100deg, rgba(10,10,12,0.88) 0%, rgba(15,15,18,0.72) 40%, rgba(20,20,24,0.45) 68%, rgba(20,20,24,0.25) 100%)' }} />
 
-      {/* 우측 원형 포인트 — 유일한 주황 포인트 */}
-      <div className="hidden lg:flex absolute right-10 xl:right-24 top-1/2 -translate-y-1/2 items-center justify-center pointer-events-none">
-        <div
-          className="relative w-[300px] h-[300px] xl:w-[360px] xl:h-[360px] rounded-full flex flex-col items-center justify-center text-center"
-          style={{
-            background: 'radial-gradient(circle at 35% 30%, #fb923c 0%, #ea580c 55%, #c2410c 100%)',
-            border: '1px solid rgba(255,255,255,0.25)',
-            boxShadow: '0 25px 70px rgba(0,0,0,0.45)',
-          }}
-        >
-          <span className="text-white/75 tracking-[0.35em] text-[11px] xl:text-xs font-semibold mb-3">ONLINE MARKETING</span>
-          <span className="text-white text-2xl leading-none opacity-70 mb-1">&ldquo;</span>
-          <span className="text-3xl xl:text-4xl leading-tight font-extrabold text-white">온라인 마케팅<br />전문기업</span>
-          <span className="text-white text-2xl leading-none opacity-70 mt-1">&rdquo;</span>
+      {/* 우측 글래스 카드 스택 (데스크톱) */}
+      <div className={`hidden lg:block absolute right-8 xl:right-20 top-1/2 w-[340px] pointer-events-none transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-y-[-50%]' : 'opacity-0 translate-y-[-42%]'}`}>
+        {/* 배지: ONLINE MARKETING 전문기업 */}
+        <div className="absolute -top-5 -left-6 z-20 bg-primary-500 text-white rounded-full px-4 py-2 text-sm font-bold shadow-lg -rotate-3">
+          ONLINE MARKETING 전문기업
+        </div>
+
+        {/* 카드 1: 플레이스 리뷰 카드 */}
+        <div className="relative z-10 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-5 shadow-2xl">
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 rounded-xl bg-green-500 flex items-center justify-center text-white font-extrabold text-lg flex-shrink-0">N</div>
+            <div className="min-w-0">
+              <div className="text-white font-bold">우리동네 맛집</div>
+              <div className="flex items-center gap-1.5">
+                <span className="text-amber-300 text-sm tracking-tight">★★★★★</span>
+                <span className="text-white/80 text-sm font-bold">4.9</span>
+              </div>
+            </div>
+          </div>
+          <div className="mt-4 h-2 bg-white/15 rounded-full w-full" />
+          <div className="mt-2 h-2 bg-white/15 rounded-full w-2/3" />
+        </div>
+
+        {/* 카드 2: 방문자 그래프 카드 */}
+        <div className="relative z-10 ml-14 -mt-4 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-5 shadow-2xl rotate-2">
+          <div className="flex items-center justify-between mb-3">
+            <span className="text-white/80 text-sm font-medium">이번 달 방문자</span>
+            <span className="text-amber-300 font-extrabold">+128%</span>
+          </div>
+          <svg className="w-full h-14 text-white/90" fill="none" viewBox="0 0 220 56" preserveAspectRatio="none">
+            <path d="M4 48 L48 34 L92 40 L140 18 L216 6" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M198 6 H216 V24" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
         </div>
       </div>
 
