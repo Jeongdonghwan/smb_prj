@@ -30,12 +30,12 @@ function Partners() {
       <div className="container-custom">
         <div
           className="scroll-animate relative rounded-3xl overflow-hidden shadow-strong"
-          style={{ background: 'linear-gradient(135deg, #9a3412 0%, #ea580c 55%, #f97316 100%)' }}
+          style={{ background: 'linear-gradient(135deg, #6b2410 0%, #9a3412 55%, #c2410c 100%)' }}
         >
           {/* 배경 장식 */}
-          <div className="absolute inset-0 pattern-dots opacity-20" />
-          <div className="absolute -top-20 -right-16 w-80 h-80 rounded-full opacity-40"
-               style={{ background: 'radial-gradient(circle, rgba(251,191,36,0.7) 0%, transparent 70%)' }} />
+          <div className="absolute inset-0 pattern-dots opacity-[0.12]" />
+          <div className="absolute -top-20 -right-16 w-80 h-80 rounded-full opacity-25"
+               style={{ background: 'radial-gradient(circle, rgba(251,191,36,0.45) 0%, transparent 70%)' }} />
 
           <div className="relative px-6 py-12 md:px-14 md:py-16 flex flex-col md:flex-row items-center gap-10">
             {/* 텍스트 */}

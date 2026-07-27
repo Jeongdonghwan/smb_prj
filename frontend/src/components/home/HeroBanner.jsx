@@ -28,21 +28,21 @@ function HeroBanner() {
 
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
-      {/* 배경: 주황 그라데이션 */}
-      <div className="absolute inset-0" style={{ background: 'linear-gradient(135deg, #7c2d12 0%, #9a3412 30%, #c2410c 60%, #ea580c 100%)' }} />
+      {/* 배경: 깊고 따뜻한 주황 그라데이션 (톤 다운) */}
+      <div className="absolute inset-0" style={{ background: 'linear-gradient(135deg, #431407 0%, #6b2410 38%, #7c2d12 68%, #9a3412 100%)' }} />
       {/* 도트 패턴 오버레이 */}
-      <div className="absolute inset-0 pattern-dots opacity-30" />
+      <div className="absolute inset-0 pattern-dots opacity-[0.12]" />
       {/* 은은한 라이트 글로우 */}
-      <div className="absolute -top-24 -right-24 w-[520px] h-[520px] rounded-full opacity-40" style={{ background: 'radial-gradient(circle, rgba(251,191,36,0.6) 0%, transparent 70%)' }} />
+      <div className="absolute -top-24 -right-24 w-[520px] h-[520px] rounded-full opacity-25" style={{ background: 'radial-gradient(circle, rgba(251,191,36,0.4) 0%, transparent 70%)' }} />
 
       {/* 우측 원형 포인트 (데스크톱, 참고 이미지 레이아웃) */}
       <div className="hidden lg:flex absolute right-6 xl:right-20 top-1/2 -translate-y-1/2 items-center justify-center pointer-events-none">
         <div
           className="relative w-[380px] h-[380px] xl:w-[460px] xl:h-[460px] rounded-full flex flex-col items-center justify-center text-center animate-float"
           style={{
-            background: 'radial-gradient(circle at 32% 28%, rgba(251,191,36,0.45) 0%, rgba(234,88,12,0.7) 55%, rgba(124,45,18,0.45) 100%)',
-            border: '1px solid rgba(255,255,255,0.3)',
-            boxShadow: '0 0 90px rgba(249,115,22,0.45)',
+            background: 'radial-gradient(circle at 32% 28%, rgba(251,191,36,0.28) 0%, rgba(194,65,12,0.45) 55%, rgba(67,20,7,0.35) 100%)',
+            border: '1px solid rgba(255,255,255,0.22)',
+            boxShadow: '0 0 70px rgba(154,52,18,0.4)',
           }}
         >
           <span className="text-white/75 tracking-[0.35em] text-xs xl:text-sm font-semibold mb-4">ONLINE MARKETING</span>
