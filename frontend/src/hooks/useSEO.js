@@ -1,8 +1,8 @@
 import { useEffect } from 'react'
 
-const BASE_URL = 'https://kidc114.kr'
-const DEFAULT_IMAGE = `${BASE_URL}/images/hero.png`
-const SITE_NAME = 'KIDC 마케팅'
+const BASE_URL = ''
+const DEFAULT_IMAGE = '/images/logo.png'
+const SITE_NAME = 'SMB 마케팅'
 
 function setMeta(selector, attribute, value) {
   let el = document.querySelector(selector)

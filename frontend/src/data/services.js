@@ -7,7 +7,7 @@ export const services = [
     description: '네이버 플레이스에서 상위 노출로 오프라인 매장 방문자를 극대화하세요. 지역 검색 최적화, 리뷰 관리, 예약 연동까지 종합적인 로컬 마케팅 솔루션을 제공합니다.',
     heroMessage: '지역 검색에서 보이지 않으면, 고객은 경쟁 업체로 갑니다',
     icon: 'map-pin',
-    color: 'from-blue-400 to-blue-600',
+    color: 'from-primary-400 to-primary-600',
     painPoints: [
       '지역 검색해도 우리 매장이 안 보인다?',
       '리뷰가 적어 신규 고객이 망설인다?',
@@ -412,7 +412,7 @@ export const services = [
     description: '전화 연결 대기 중 브랜드 홍보 영상이 노출되는 보이는컬러링(V비즈링) 서비스입니다. 별도 앱 설치 없이 전화 거는 상대방에게 자동으로 브랜드 영상을 보여줍니다.',
     heroMessage: '전화 한 통이 브랜드 홍보의 기회가 됩니다',
     icon: 'phone',
-    color: 'from-cyan-400 to-cyan-600',
+    color: 'from-amber-400 to-amber-600',
     painPoints: [
       '새로운 광고 채널을 찾고 있다?',
       '기존 광고의 노출 효과가 떨어진다?',

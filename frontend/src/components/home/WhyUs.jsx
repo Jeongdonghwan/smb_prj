@@ -7,7 +7,7 @@ function WhyUs() {
   const [countersVisible, setCountersVisible] = useState(false)
 
   const stats = [
-    { number: 12765, suffix: '+', label: '누적 고객사', color: 'from-blue-500 to-blue-600' },
+    { number: 12765, suffix: '+', label: '누적 고객사', color: 'from-primary-500 to-primary-600' },
     { number: 98, suffix: '%', label: '고객 만족도', color: 'from-green-500 to-green-600' },
     { number: 10, suffix: '년+', label: '업계 경험', color: 'from-purple-500 to-purple-600' },
     { number: 24, suffix: 'h', label: '빠른 응대', color: 'from-orange-500 to-orange-600' },
@@ -62,12 +62,12 @@ function WhyUs() {
       <div className="container-custom">
         {/* 섹션 헤더 */}
         <div className="text-center mb-16">
-          <span className="badge-primary mb-4">WHY KIDC</span>
+          <span className="badge-primary mb-4">WHY SMB</span>
           <h2 className="section-title">
-            왜 <span className="gradient-text">KIDC</span>을 선택해야 할까요?
+            왜 <span className="gradient-text">SMB</span>를 선택해야 할까요?
           </h2>
           <p className="section-subtitle">
-            KIDC만의 차별화된 서비스로 비즈니스 성장을 경험하세요
+            SMB만의 차별화된 서비스로 비즈니스 성장을 경험하세요
           </p>
         </div>
 
@@ -130,7 +130,7 @@ function WhyUs() {
         <div className="mt-20 scroll-animate">
           <div className="text-center mb-12">
             <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-              KIDC vs 일반 마케팅 대행사
+              SMB vs 일반 마케팅 대행사
             </h3>
             <p className="text-gray-600">
               차별화된 서비스 품질을 비교해보세요
@@ -138,14 +138,14 @@ function WhyUs() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            {/* KIDC */}
-            <div className="bg-gradient-to-br from-primary-50 to-blue-50 rounded-2xl p-8 border-2 border-primary-200">
+            {/* SMB */}
+            <div className="bg-gradient-to-br from-primary-50 to-amber-50 rounded-2xl p-8 border-2 border-primary-200">
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-12 h-12 bg-primary-600 rounded-xl flex items-center justify-center">
-                  <span className="text-white font-bold text-lg">KIDC</span>
+                  <span className="text-white font-bold text-base">SMB</span>
                 </div>
                 <div>
-                  <h4 className="font-bold text-gray-900">KIDC 마케팅</h4>
+                  <h4 className="font-bold text-gray-900">SMB 마케팅</h4>
                   <p className="text-sm text-primary-600">Premium Service</p>
                 </div>
               </div>

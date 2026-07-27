@@ -60,7 +60,7 @@ const solutions = [
     title: '트래픽 부스트',
     subtitle: '유입 솔루션',
     icon: 'trending-up',
-    color: 'from-blue-400 to-blue-600',
+    color: 'from-primary-400 to-primary-600',
     features: [
       '상품 페이지 유입량 증가',
       '플랫폼 알고리즘이 "인기 상품"으로 인식',
@@ -158,7 +158,7 @@ function SpecSheet() {
   const sectionRef = useRef(null)
 
   useSEO({
-    title: '이커머스 랭킹 솔루션 | KIDC 마케팅',
+    title: '이커머스 랭킹 솔루션 | SMB 마케팅',
     description: '쿠팡 & 스마트스토어 상품 순위를 전략적으로 끌어올리는 이커머스 랭킹 솔루션. 트래픽 부스트, 세일즈 액셀러레이터, 리뷰 빌딩 서비스 제공.',
     path: '/spec-sheet',
   })
@@ -647,7 +647,7 @@ function SpecSheet() {
           {/* 데스크톱 - 가로 타임라인 */}
           <div className="hidden lg:block relative">
             <div className="absolute top-16 left-[8%] right-[8%] h-1 bg-gray-200 rounded-full">
-              <div className="h-full bg-gradient-to-r from-blue-500 to-purple-500 rounded-full" style={{ width: '100%' }} />
+              <div className="h-full bg-gradient-to-r from-primary-500 to-purple-500 rounded-full" style={{ width: '100%' }} />
             </div>
 
             <div className="grid grid-cols-6 gap-4">
@@ -657,7 +657,7 @@ function SpecSheet() {
                   className="scroll-animate relative text-center group"
                   style={{ transitionDelay: `${index * 0.1}s` }}
                 >
-                  <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-gradient-to-br from-blue-500 to-purple-500 flex items-center justify-center text-white text-lg font-bold relative z-10 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-gradient-to-br from-primary-500 to-purple-500 flex items-center justify-center text-white text-lg font-bold relative z-10 shadow-lg group-hover:scale-110 transition-transform duration-300">
                     {step.step}
                   </div>
 
@@ -672,7 +672,7 @@ function SpecSheet() {
 
           {/* 모바일 - 세로 타임라인 */}
           <div className="lg:hidden relative">
-            <div className="absolute top-0 bottom-0 left-6 w-1 bg-gradient-to-b from-blue-500 to-purple-500" />
+            <div className="absolute top-0 bottom-0 left-6 w-1 bg-gradient-to-b from-primary-500 to-purple-500" />
 
             <div className="space-y-6">
               {processSteps.map((step, index) => (
@@ -681,7 +681,7 @@ function SpecSheet() {
                   className="scroll-animate relative flex items-start gap-6"
                   style={{ transitionDelay: `${index * 0.1}s` }}
                 >
-                  <div className="w-12 h-12 flex-shrink-0 rounded-full bg-gradient-to-br from-blue-500 to-purple-500 flex items-center justify-center text-white text-lg font-bold relative z-10 shadow-lg">
+                  <div className="w-12 h-12 flex-shrink-0 rounded-full bg-gradient-to-br from-primary-500 to-purple-500 flex items-center justify-center text-white text-lg font-bold relative z-10 shadow-lg">
                     {step.step}
                   </div>
                   <div className="flex-1 bg-white rounded-xl p-4 hover:shadow-medium transition-all duration-300">
@@ -776,7 +776,7 @@ function SpecSheet() {
 
       {/* 11. CTA + 문의 폼 */}
       <section className="relative py-20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-600 via-purple-600 to-green-600" />
+        <div className="absolute inset-0 bg-gradient-to-br from-primary-600 via-purple-600 to-green-600" />
         <div className="pattern-dots absolute inset-0 opacity-20" />
 
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white mb-12">

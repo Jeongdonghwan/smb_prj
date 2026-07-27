@@ -16,7 +16,7 @@ function Testimonials() {
       icon: 'shopping-bag',
       iconColor: 'from-pink-500 to-rose-500',
       iconBg: 'bg-pink-100',
-      content: '스마트스토어 시작 3개월 만에 월 매출 500만원을 달성했습니다. KIDC팀의 체계적인 마케팅 전략 덕분입니다. 특히 상위 노출 관리가 정말 탁월했어요.',
+      content: '스마트스토어 시작 3개월 만에 월 매출 500만원을 달성했습니다. SMB팀의 체계적인 마케팅 전략 덕분입니다. 특히 상위 노출 관리가 정말 탁월했어요.',
       stats: { before: '50만원', after: '500만원', growth: '900%' }
     },
     {
@@ -28,7 +28,7 @@ function Testimonials() {
       icon: 'heart',
       iconColor: 'from-green-500 to-emerald-500',
       iconBg: 'bg-green-100',
-      content: '쿠팡 광고를 직접 운영하다가 KIDC에 맡겼는데, 같은 광고비로 ROAS가 3배 이상 올랐습니다. 데이터 기반의 최적화가 확실히 다릅니다.',
+      content: '쿠팡 광고를 직접 운영하다가 SMB에 맡겼는데, 같은 광고비로 ROAS가 3배 이상 올랐습니다. 데이터 기반의 최적화가 확실히 다릅니다.',
       stats: { before: 'ROAS 150%', after: 'ROAS 480%', growth: '3.2배' }
     },
     {
@@ -38,8 +38,8 @@ function Testimonials() {
       service: '플레이스 마케팅',
       rating: 5,
       icon: 'building',
-      iconColor: 'from-blue-500 to-indigo-500',
-      iconBg: 'bg-blue-100',
+      iconColor: 'from-primary-500 to-amber-500',
+      iconBg: 'bg-primary-100',
       content: '네이버 플레이스 상위 노출 후 예약 문의가 2배 이상 늘었습니다. 리뷰 관리까지 꼼꼼하게 해주셔서 신규 환자분들의 신뢰도가 많이 높아졌어요.',
       stats: { before: '월 30건', after: '월 75건', growth: '150%' }
     },
@@ -126,7 +126,7 @@ function Testimonials() {
             고객님들의 <span className="gradient-text">생생한 후기</span>
           </h2>
           <p className="section-subtitle">
-            KIDC와 함께 성장한 고객사들의 실제 경험담입니다
+            SMB와 함께 성장한 고객사들의 실제 경험담입니다
           </p>
         </div>
 

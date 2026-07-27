@@ -22,34 +22,34 @@ function HeroBanner() {
   ]
 
   const partners = [
-    '스마트스토어', '쿠팡', '네이버 플레이스', '카카오',
-    '구글 애드', '메타', '당근마켓', '오늘의집'
+    '올인원 마케팅', '당근마켓', '네이버 플레이스', '검색광고',
+    '리뷰 마케팅', '블로그', '인스타그램', '유튜브'
   ]
 
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
-      {/* 배경 그라데이션 (공통 베이스) */}
-      <div className="absolute inset-0" style={{ background: 'linear-gradient(135deg, #0a1628 0%, #112240 40%, #1a3355 70%, #1e3a5f 100%)' }} />
+      {/* 배경: 주황 그라데이션 */}
+      <div className="absolute inset-0" style={{ background: 'linear-gradient(135deg, #7c2d12 0%, #9a3412 30%, #c2410c 60%, #ea580c 100%)' }} />
+      {/* 도트 패턴 오버레이 */}
+      <div className="absolute inset-0 pattern-dots opacity-30" />
+      {/* 은은한 라이트 글로우 */}
+      <div className="absolute -top-24 -right-24 w-[520px] h-[520px] rounded-full opacity-40" style={{ background: 'radial-gradient(circle, rgba(251,191,36,0.6) 0%, transparent 70%)' }} />
 
-      {/* 데스크톱: 풀 배경 이미지 + 왼쪽 패널 오버레이 */}
-      <div className="absolute inset-0 hidden lg:block">
-        <img
-          src="/images/hero.png"
-          alt="KIDC 한국인터넷정보통신 사옥"
-          className="w-full h-full object-cover object-[70%_center]"
-        />
-        <div className="absolute inset-0 bg-black/30" />
-      </div>
-      <div className="hidden lg:block absolute inset-y-0 left-0 w-[55%]" style={{ background: 'linear-gradient(to right, rgba(10,22,40,0.92) 0%, rgba(17,34,64,0.85) 60%, rgba(17,34,64,0.4) 85%, transparent 100%)' }} />
-
-      {/* 모바일/태블릿: 건물 이미지 배경 + 그라데이션 */}
-      <div className="absolute inset-0 lg:hidden">
-        <img
-          src="/images/hero.png"
-          alt=""
-          className="w-full h-full object-cover object-right"
-        />
-        <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, rgba(10,22,40,0.93) 0%, rgba(10,22,40,0.8) 40%, rgba(10,22,40,0.4) 70%, rgba(10,22,40,0.15) 100%)' }} />
+      {/* 우측 원형 포인트 (데스크톱, 참고 이미지 레이아웃) */}
+      <div className="hidden lg:flex absolute right-6 xl:right-20 top-1/2 -translate-y-1/2 items-center justify-center pointer-events-none">
+        <div
+          className="relative w-[380px] h-[380px] xl:w-[460px] xl:h-[460px] rounded-full flex flex-col items-center justify-center text-center animate-float"
+          style={{
+            background: 'radial-gradient(circle at 32% 28%, rgba(251,191,36,0.45) 0%, rgba(234,88,12,0.7) 55%, rgba(124,45,18,0.45) 100%)',
+            border: '1px solid rgba(255,255,255,0.3)',
+            boxShadow: '0 0 90px rgba(249,115,22,0.45)',
+          }}
+        >
+          <span className="text-white/75 tracking-[0.35em] text-xs xl:text-sm font-semibold mb-4">ONLINE MARKETING</span>
+          <span className="text-white text-3xl leading-none opacity-70 mb-1">&ldquo;</span>
+          <span className="text-4xl xl:text-5xl leading-tight font-extrabold text-white">온라인 마케팅<br />전문기업</span>
+          <span className="text-white text-3xl leading-none opacity-70 mt-1">&rdquo;</span>
+        </div>
       </div>
 
       {/* 콘텐츠 */}
@@ -65,13 +65,13 @@ function HeroBanner() {
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
               온라인 마케팅의<br />
               <span className="relative">
-                <span className="gradient-text-accent">새로운 기준</span>
+                <span className="text-amber-200">새로운 기준</span>
                 <svg className="absolute -bottom-2 left-0 w-full" viewBox="0 0 300 12" fill="none">
                   <path d="M2 10C50 3 150 3 298 10" stroke="url(#underline-gradient)" strokeWidth="4" strokeLinecap="round"/>
                   <defs>
                     <linearGradient id="underline-gradient" x1="0" y1="0" x2="300" y2="0">
-                      <stop stopColor="#06b6d4"/>
-                      <stop offset="1" stopColor="#3b82f6"/>
+                      <stop stopColor="#fde68a"/>
+                      <stop offset="1" stopColor="#fff7ed"/>
                     </linearGradient>
                   </defs>
                 </svg>
@@ -79,7 +79,7 @@ function HeroBanner() {
             </h1>
 
             <p className="text-lg sm:text-xl text-white/80 mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-              스마트스토어, 쿠팡, 플레이스, 검색광고, 리뷰 마케팅까지<br className="hidden sm:block" />
+              올인원, 당근, 플레이스, 검색광고, 리뷰 마케팅까지<br className="hidden sm:block" />
               <strong className="text-white">10년 경력 전문가</strong>가 직접 운영하는 맞춤형 솔루션
             </p>
 

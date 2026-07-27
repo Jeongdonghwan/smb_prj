@@ -11,7 +11,7 @@ function Logo({ className = '', size = 'default' }) {
     <Link to="/" className={`inline-block ${className}`}>
       <img
         src="/images/logo.png"
-        alt="KIDC 한국인터넷정보통신"
+        alt="SMB 에스엠비"
         className={`${sizeClasses[size]} w-auto object-contain`}
       />
     </Link>

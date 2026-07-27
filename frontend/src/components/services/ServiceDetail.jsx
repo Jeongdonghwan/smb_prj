@@ -88,7 +88,7 @@ function ServiceDetail({ service }) {
   const sectionRef = useRef(null)
 
   useSEO({
-    title: `${service.title} | KIDC 마케팅`,
+    title: `${service.title} | SMB 마케팅`,
     description: service.description,
     path: service.path,
   })
@@ -136,7 +136,7 @@ function ServiceDetail({ service }) {
         <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 text-center">
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full mb-6 border border-white/20">
             <Icon name={service.icon} className="w-5 h-5 text-white" />
-            <span className="text-white/90 text-sm font-medium">KIDC {service.title}</span>
+            <span className="text-white/90 text-sm font-medium">SMB {service.title}</span>
           </div>
 
           <div className="flex justify-center mb-8">
@@ -355,7 +355,7 @@ function ServiceDetail({ service }) {
                 실제 <span className="gradient-text">성과 사례</span>
               </h2>
               <p className="section-subtitle">
-                KIDC와 함께한 고객사들의 실제 성과입니다
+                SMB와 함께한 고객사들의 실제 성과입니다
               </p>
             </div>
 

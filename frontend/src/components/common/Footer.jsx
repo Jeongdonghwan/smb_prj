@@ -11,16 +11,15 @@ function Footer() {
           <div>
             <Logo className="text-white mb-2" size="small" />
             <p className="text-sm text-gray-400 mb-4">
-              온라인 마케팅 전문 대행사<br />
-              KIDC와 함께 성장하세요.
+              소상공인 온라인 마케팅 전문 대행사<br />
+              SMB와 함께 성장하세요.
             </p>
             <div className="text-sm space-y-1">
-              <p>전화: 1566-2137</p>
-              <p>이메일: manager@inter114.kr</p>
+              <p>전화: 추후 입력</p>
+              <p>이메일: 추후 입력</p>
             </div>
             <a
-              href="https://pf.kakao.com/_xjxavxhX"
-              target="_blank"
+              href="#"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 mt-3 px-4 py-2 bg-yellow-400 text-gray-900 text-sm font-medium rounded-lg hover:bg-yellow-300 transition-colors"
             >
@@ -52,18 +51,18 @@ function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-4">회사 정보</h4>
             <ul className="text-sm space-y-2 text-gray-400">
-              <li>상호: 주식회사한국인터넷정보통신</li>
-              <li>대표자: 방진성</li>
-              <li>사업자등록번호: 864-81-02572</li>
-              <li>통신판매등록번호: 2024-경기김포-8085</li>
-              <li>주소: 경기도 김포시 고촌읍 김포대로 328</li>
+              <li>상호: SMB (에스엠비)</li>
+              <li>대표자: 추후 입력</li>
+              <li>사업자등록번호: 추후 입력</li>
+              <li>통신판매등록번호: 추후 입력</li>
+              <li>주소: 추후 입력</li>
             </ul>
           </div>
         </div>
 
         {/* 저작권 */}
         <div className="mt-12 pt-8 border-t border-gray-800 text-center text-sm text-gray-500">
-          <p>&copy; {new Date().getFullYear()} KIDC. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} SMB. All rights reserved.</p>
         </div>
       </div>
     </footer>
